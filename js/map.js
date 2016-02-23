@@ -9,7 +9,6 @@ function getMission(){
 }
 
 function getNode(node){
-	console.log('node',node)
 	currentNode = findNodeData(node)
 	console.log('node json icon',currentNode.icon)
 	$.get( "partials/mission"+currentMission+"/"+node+".html", function( data ) {
@@ -40,22 +39,60 @@ function findNodeData(nodeID){
 }
 var user_records;
 function getUser(){
-	console.log("getting user")
+	console.log("getting user here")
+	 loadData();
+	 /*
 	$.ajax({
     url: 'js/getPlayerRecord.json',
     dataType: 'json',
-    fail: function(e){
-    	console.log('bad boy')
-    },
-    complete: function(xhr,status){
-    	console.log('status', status)
-    },
     success: function(data) {
-    	console.log("success",data)
-    	user_records = data
-		$('.user-name').text(data.name)
-		$('.points').text(data.scores[0].amount)
-		var badges = data.earnedBadges
+    	console.log("success")
+    processRecords(data)
+    }
+});
+*/
+}
+
+
+ var theToken;
+  
+  $(document).ready(function(){
+  		GSCommunicator.setAppName('2045Future')
+  		GSCommunicator.fetchToken();
+  		//loadRecords();
+  		
+})
+
+	function loadRecords(){
+  	GSCommunicator.getUserInformation(function (response) {
+		GSCommunicator.setPlayerId(response.email)
+	console.log("Welcome "+response.firstname+" "+response.lastname+"");
+	}, this);
+		 
+    	}
+    	
+  function loadData(){
+		GSCommunicator.send( "getPlayerRecord" ,[GSCommunicator.getPlayerId()],  function( response ) {
+			console.log( response ); 
+			if(response.error !=null){
+				loadRecords();
+				loadData()
+			}else{
+				processRecords(response.result)
+			//var results_string = JSON.stringify(response.result).replace(',', ', ').replace('[', '').replace(']', '');
+			//console.log("Your Records "+results_string);	
+			}
+			
+		}, this);
+
+  	}
+  	
+  	function processRecords(records){
+  		 console.log("records",records)
+    	user_records = records;
+		$('.user-name').text(records.name)
+		$('.points').text(records.scores[0].amount)
+		var badges = records.earnedBadges
 		$.each(badges, function(i, item) {
 			var badge = $('.'+item.name)
 			if(i<3){
@@ -64,6 +101,4 @@ function getUser(){
 			badge.css('display', 'inline').css('left', ((i-3)*50)+'px').css('top', '50px')
 			}
 		})
-    }
-});
-}
+  	}
