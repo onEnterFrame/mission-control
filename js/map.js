@@ -38,14 +38,21 @@ function findNodeData(nodeID){
 	});
 	return node_json
 }
-
+var user_records;
 function getUser(){
 	console.log("getting user")
 	$.ajax({
     url: 'js/getPlayerRecord.json',
     dataType: 'json',
+    fail: function(e){
+    	console.log('bad boy')
+    },
+    complete: function(xhr,status){
+    	console.log('status', status)
+    },
     success: function(data) {
-    	console.log(data)
+    	console.log("success",data)
+    	user_records = data
 		$('.user-name').text(data.name)
 		$('.points').text(data.scores[0].amount)
 		var badges = data.earnedBadges
