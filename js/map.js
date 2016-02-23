@@ -2,16 +2,17 @@ var currentMission = 0;
 var currentNode ={};
 function getMission(){
 	currentNode ={};
-	$.get( "partials/mission"+currentMission+"/intro.html", function( data ) {
+	$.get( "partials/mission"+currentMission+"/M"+currentMission+"A.html", function( data ) {
 	  $(".details").html(data);
 	});
 	$(".icon_holder").css('background-image', "url('images/icons/mission.png')");
 }
 
 function getNode(node){
-	currentNode = findNodeData(node)
+	console.log("partials/mission"+currentMission+"/M"+currentMission+node+".html" )
+	currentNode = findNodeData(currentMission+node)
 	console.log('node json icon',currentNode.icon)
-	$.get( "partials/mission"+currentMission+"/"+node+".html", function( data ) {
+	$.get( "partials/mission"+currentMission+"/M"+currentMission+node+".html", function( data ) {
 	  $(".details").html(data);
 	});
 	$(".icon_holder").css('background-image', "url('images/icons/"+currentNode.icon+".png')");
@@ -40,16 +41,14 @@ function findNodeData(nodeID){
 var user_records;
 function getUser(){
 	console.log("getting user here")
-	 loadData();
+	if(location.hostname.indexOf('sap') > 1){
+		loadData();
+	}else{
+		loadFakeRecords()
+	}
+	 
 	 /*
-	$.ajax({
-    url: 'js/getPlayerRecord.json',
-    dataType: 'json',
-    success: function(data) {
-    	console.log("success")
-    processRecords(data)
-    }
-});
+	
 */
 }
 
@@ -101,4 +100,16 @@ function getUser(){
 			badge.css('display', 'inline').css('left', ((i-3)*50)+'px').css('top', '50px')
 			}
 		})
+  	}
+
+  	function loadFakeRecords(){
+  		$.ajax({
+    url: 'js/getPlayerRecord.json',
+    dataType: 'json',
+    success: function(data) {
+    	console.log("success")
+    processRecords(data)
+    }
+});
+
   	}
