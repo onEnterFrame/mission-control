@@ -1,6 +1,23 @@
 {
   "run": [
     {
+      "filePath": "/missionControl.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 1865479,
+        "displayName": "Run missionControl.html"
+      }
+    },
+    {
       "filePath": "/index.html",
       "previewMode": 1,
       "dataMode": 1,
