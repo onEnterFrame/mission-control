@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gamification Test</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+    
+  </head>
+  <body>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" type="text/javascript"></script>
+  
+ <script src="GSCommunicator.js" type="text/javascript"></script>
+ <div class="container">
+ <div class="alert alert-danger alert-dismissible fade in" role="alert" style="display: none;">
+  <span id="error"></span>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div>
+ <div id='welcome'>Loading...</div>
+ <div class="card">
+  <div class="card-block">
+    <h4 class="card-title">Your Records</h4>
+    <p class="card-text" id='status'>You records will appear here.</p>
+    <button class="btn btn-primary" onclick='loadData()'>Get My Records</button>
+  </div>
+</div>
+ <div class="card">
+  <div class="card-block">
+    <h4 class="card-title">Mission Completion</h4>
+    <p class="card-text">Enter a mission ID and click the button to complete it.</p>
+
+    <div class="input-group">
+       <span class="input-group-btn">
+     <button class="btn btn-success-outline" onclick='pointsMe()'>Points Me</button>
+     </span>
+    <input class="form-control " type="text" id='mission' placeholder="Mission ID">
+ 
+     </div>
+
+  </div>
+</div>
+ <div class="card">
+  <div class="card-block">
+    <h4 class="card-title">Debuging</h4>
+    <p class="card-text">Try these.</p>
+
+     <button class="btn btn-success-outline" onclick='getToken()'>Fetch Token</button>
+	<button class="btn btn-success-outline" onclick='loadMe()'>Get Me</button>
+
+     </div>
+
+  </div>
+</div>
+ 
+
+    
+  <script>
+  var theToken;
+  
+  $(document).ready(function(){
+  		GSCommunicator.setAppName('2045Future')
+  		getToken()
+        loadMe()
+});
+  
+  
+  function getToken(){
+  	$(".alert").hide()
+    		GSCommunicator.fetchToken();
+  	  }
+  
+  function pointsMe(){
+  	var missionID = $('#mission').val()
+  			GSCommunicator.send( "handleEvent" ,[{"siteId":"2045Future","type":"GetMission","playerid":GSCommunicator.getPlayerId(), "data":{"missionID":missionID}}],  function( response ) {
+			if(response.error !=null){
+					$(".alert").show()
+				$("#error").html("<strong>Error</strong> "+response.error);
+			}else{
+		//	var results_string = JSON.stringify(response.result).replace(',', ', ').replace('[', '').replace(']', '');
+		//	$("#points").html("Points Results<br> "+results_string);
+		loadData()
+			}
+		}, this);
+  }
+  
+  	function loadData(){
+  		$(".alert").hide()
+		GSCommunicator.send( "getPlayerRecord" ,[GSCommunicator.getPlayerId()],  function( response ) {
+			console.log( response ); 
+			if(response.error !=null){
+				$(".alert").show()
+				$("#error").html("<strong>Error</strong> "+response.error);
+				loadMe();
+				loadData()
+			}else{
+			var results_string = JSON.stringify(response.result).replace(',', ', ').replace('[', '').replace(']', '');
+			$("#status").html("Your Records<br> "+results_string);	
+			}
+			
+		}, this);
+
+  	}
+  	
+  	function loadMe(){
+  		$(".alert").hide()
+  	GSCommunicator.getUserInformation(function (response) {
+		GSCommunicator.setPlayerId(response.email)
+		$("#welcome").html("<h2>Welcome "+response.firstname+" "+response.lastname+"</h2>");
+	}, this);
+		 
+    	}
+  </script>
+  </body>
+</html>
