@@ -3,8 +3,9 @@
 var activeMission;var nodes_json;(function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindSymbolAction(compId,symbolName,"creationComplete",function(sym,e){sym.getComposition().getStage().getSymbol("HomePanel").$('badge_panel').children().css('display','none');$("head").append('<link rel="stylesheet" type="text/css" href="map.css"/>');console.log('loaded')
-sym.setVariable("player_name","loading")
-$.ajax({url:'js/nodes.json',dataType:'json',success:function(nodes){nodes_json=nodes;}});getUser();});
+$.ajax({url:'js/nodes.json',dataType:'json',success:function(nodes){console.log('got nodes')
+nodes_json=nodes;}});console.log('getting user')
+getUser();});
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){sym.getComposition().getStage().getSymbol("HomePanel").getSymbol("pbar").$("bar").width('1%');sym.getComposition().getStage().getSymbol("HomePanel").getSymbol("pbar").$("bar").animate({width:'75%'},2000);sym.getComposition().getStage().getSymbol("HomePanel").$("name_text").html(sym.getVariable("player_name"));});
 //Edge binding end
