@@ -38,3 +38,25 @@ function findNodeData(nodeID){
 	});
 	return node_json
 }
+
+function getUser(){
+	console.log("getting user")
+	$.ajax({
+    url: 'js/getPlayerRecord.json',
+    dataType: 'json',
+    success: function(data) {
+    	console.log(data)
+		$('.user-name').text(data.name)
+		$('.points').text(data.scores[0].amount)
+		var badges = data.earnedBadges
+		$.each(badges, function(i, item) {
+			var badge = $('.'+item.name)
+			if(i<3){
+			badge.css('display', 'inline').css('left', (i*50)+'px')
+			}else{
+			badge.css('display', 'inline').css('left', ((i-3)*50)+'px').css('top', '50px')
+			}
+		})
+    }
+});
+}
