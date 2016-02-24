@@ -10,9 +10,7 @@ function getMission() {
 }
 
 function getNode(node) {
-    console.log("partials/mission" + currentMission + "/M" + currentMission + node + ".html")
     currentNode = findNodeData(currentMission + node)
-    console.log('node json icon', currentNode.icon)
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function (data) {
         $(".details").html(data);
     });
@@ -20,7 +18,9 @@ function getNode(node) {
 }
 
 function launchLink() {
+	console.log("link ",currentNode)
     if (currentNode.link) {
+    	pointsMe("M" + currentNode.id )
         window.open(currentNode.link)
     }
 }
@@ -28,7 +28,6 @@ function launchLink() {
 function findNodeData(nodeID) {
     var node_json
     $.each(nodes_json.missions[0]["mission" + currentMission].nodes, function (key, value) {
-        //console.log(key, value.id);
         if (value.id == nodeID) {
             node_json = value
         }
@@ -38,7 +37,6 @@ function findNodeData(nodeID) {
 var user_records;
 
 function getUser() {
-    console.log("getting user here")
     if (location.hostname.indexOf('sap') > 1) {
         loadData();
     } else {
@@ -55,26 +53,22 @@ $(document).ready(function () {
 function loadRecords() {
     GSCommunicator.getUserInformation(function (response) {
         GSCommunicator.setPlayerId(response.email)
-        console.log("Welcome " + response.firstname + " " + response.lastname + "");
+
     }, this);
 }
 
 function loadData() {
     GSCommunicator.send("getPlayerRecord", [GSCommunicator.getPlayerId()], function (response) {
-        console.log(response);
         if (response.error != null) {
             loadRecords();
             loadData()
         } else {
             processRecords(response.result)
-                //var results_string = JSON.stringify(response.result).replace(',', ', ').replace('[', '').replace(']', '');
-                //console.log("Your Records "+results_string);	
         }
     }, this);
 }
 
 function processRecords(records) {
-    console.log("records", records)
     user_records = records;
     $('.user-name').text(records.name)
     $('.points').text(records.scores[0].amount)
@@ -95,7 +89,7 @@ function processRecords(records) {
         try {
             theMap.getSymbol(missionID).play(800)
         } catch (e) {
-            //console.log("no mission:", missionID)
+            
         }
     });
     var activeMissions = records.activeMissions
@@ -104,7 +98,7 @@ function processRecords(records) {
         try {
             theMap.getSymbol(missionID).play(800)
         } catch (e) {
-           // console.log("no mission:", missionID)
+           
         }
     });
 }
@@ -114,8 +108,21 @@ function loadFakeRecords() {
         url: 'js/getPlayerRecord.json',
         dataType: 'json',
         success: function (data) {
-            console.log("success")
+           
             processRecords(data)
         }
     });
 }
+
+
+  
+  function pointsMe(missionID){
+  	console.log(missionID)
+  	GSCommunicator.send( "handleEvent" ,[{"siteId":"2045Future","type":"GetMission","playerid":GSCommunicator.getPlayerId(), "data":{"missionID":missionID}}],  function( response ) {
+			if(response.error !=null){
+					alert("there was an issue")
+			}else{
+				loadData()
+			}
+		}, this);
+  }
