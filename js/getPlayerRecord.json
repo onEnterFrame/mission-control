@@ -25,7 +25,7 @@
   ],
   "activeMissions": [
     {
-      "name": "mission1p",
+      "name": "mission1f",
       "displayName": "mission1p",
       "description": "rebus",
       "pointName": null,
@@ -36,7 +36,7 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission2a",
+      "name": "mission1g",
       "displayName": "mission2a",
       "description": "Mission2 - Start",
       "pointName": null,
@@ -60,17 +60,6 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission1a",
-      "displayName": "Food?",
-      "description": "Mission 1 Intro",
-      "pointName": null,
-      "lowerBound": 0,
-      "upperBound": null,
-      "consequence": "M1A",
-      "completedOn": 1455894976583,
-      "currentPointAmount": 0
-    },
-    {
       "name": "mission0b",
       "displayName": "Temporal Rules",
       "description": "Mission 0 - Temporal Rules",
@@ -82,7 +71,7 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission1z",
+      "name": "mission1a",
       "displayName": "Jam Job Aid",
       "description": "Mission 1 - Jam Job Aid",
       "pointName": null,
@@ -115,7 +104,7 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission1e",
+      "name": "mission1b",
       "displayName": "Sports & Entertainment",
       "description": "Mission 1- Sports & Entertainment",
       "pointName": null,
@@ -126,18 +115,18 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission1f",
+      "name": "mission1x",
       "displayName": "Customer Testimonial 1",
       "description": "Mission 1 - Customer Testimonial 1",
       "pointName": null,
       "lowerBound": 0,
       "upperBound": null,
-      "consequence": "M1F",
+      "consequence": "M1x",
       "completedOn": 1455895134136,
       "currentPointAmount": 0
     },
     {
-      "name": "mission1g",
+      "name": "mission1w",
       "displayName": "Customer Testimonial-2",
       "description": "Mission 1: CustomerTestimonial-2",
       "pointName": null,

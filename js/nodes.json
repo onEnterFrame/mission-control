@@ -1,45 +1,176 @@
 {
    "missions":[
       {
+         "mission0":{
+            "nodes":[
+               {
+                  "id":"0A",
+                  "link":null,
+                  "icon":{
+                     "type":"mission",
+                     "color":"lg"
+                  },
+                  "required":true,
+                  "video": "videoFile.name"
+               },
+               {
+                  "id":"0B",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lg"
+                  },
+                  "required":true
+               }
+            ]
+         }
+      },
+      {
          "mission1":{
             "nodes":[
                {
                   "id":"1A",
                   "link":"http://sap.com",
-                  "icon": "video",
-                  "code":null
+                  "icon":{
+                     "type":"lms",
+                     "color":"lg"
+                  },
+                  "required":true
                },
                {
-                  
                   "id":"1B",
-                  "link":"http://leolearning.com",
-                  "icon": "jam",
-                  "code":null
+                  "link":"http://go.sap.com/solution/industry/wholesale-distribution.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
                },
                {
-                  
                   "id":"1C",
-                  "link":"http://reviewmyelearning.com",
-                  "icon": "lms",
-                  "code":null
+                  "link":"http://go.sap.com/solution/industry/sports-entertainment/food-beverage.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
                },
                {
                   "id":"1D",
-                  "link":"http://elearningbrothers.com",
-                  "icon": "video",
-                  "code":null
+                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/weissbeerger.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
                },
-               {                  
+               {
                   "id":"1E",
-                  "link":"http://builtclean.com",
-                  "icon": "jam",
-                  "code":null
+                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/giz.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
                },
-               {                  
+               {
                   "id":"1F",
-                  "link":"http://reviewmyelearning.com",
-                  "icon": "game",
-                  "code":null
+                  "link":"http://www.sap.com/customer-testimonials/public-sector/feeding-america.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"1G",
+                  "link":null,
+                  "icon":{
+                     "type":"mission",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1H",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "icon":{
+                     "type":"mission",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1I",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1J",
+                  "link":"https://www.youtube.com/watch?v=stIU1vuWc3Q&list=PL4A27845F6B074BE9",
+                  "icon":{
+                     "type":"video",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1K",
+                  "link":"http://www.conagrafoods.com/our-company/company-history",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1L",
+                  "link":null,
+                  "icon":{
+                     "type":"doc",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1M",
+                  "link":null,
+                  "icon":{
+                     "type":"page",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1N",
+                  "link":null,
+                  "icon":{
+                     "type":"game",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1O",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1P",
+                  "link":null,
+                  "icon":{
+                     "type":"mission",
+                     "color":"lg"
+                  },
+                  "required":true
                }
             ]
          }
@@ -48,18 +179,16 @@
          "mission2":{
             "2a":[
                {
-                  
                   "id":"2a",
                   "link":"http",
-                  "icon": "game",
-                  "code":null
+                  "icon":"game",
+                  "required":true
                },
                {
-                  
                   "id":"2a",
                   "link":"http",
-                  "icon": "lms",
-                  "code":null
+                  "icon":"lms",
+                  "required":true
                }
             ]
          }

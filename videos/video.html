@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video</title>
+	<style>
+	body{
+		margin: 0;
+		background-color: #0e3440; 
+	}
+	video {
+	  width: 100%    !important;
+	  height: auto   !important;
+	  max-height: 850px;
+	}
+	</style>
+</head>
+<body>
+<video width="1920" height="1080" controls>
+  <source src="" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	
+  var src = window.location.search.substr(1)+".mp4";
+ $("source").attr("src", src)
+ $("video").load();
+
+</script>
+</body>
+</html>

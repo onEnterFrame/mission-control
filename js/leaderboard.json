@@ -1,0 +1,42 @@
+[
+  {
+    "displayName": "Richard Stein",
+    "image": null,
+    "scorer": "richard.stein@sap.com",
+    "pointName": "Experience Points",
+    "amount": 550,
+    "rank": 1
+  },
+  {
+    "displayName": "Demo User",
+    "image": null,
+    "scorer": "demo-user@mail.com",
+    "pointName": "Experience Points",
+    "amount": 75,
+    "rank": 2
+  },
+  {
+    "displayName": "James Kingsley",
+    "image": null,
+    "scorer": "james.kingsley@sap.com",
+    "pointName": "Experience Points",
+    "amount": 70,
+    "rank": 3
+  },
+  {
+    "displayName": "Julian Witt",
+    "image": null,
+    "scorer": "james.kingsley@sap.com",
+    "pointName": "Experience Points",
+    "amount": 20,
+    "rank": 4
+  },
+  {
+    "displayName": "Example User",
+    "image": null,
+    "scorer": "james.kingsley@sap.com",
+    "pointName": "Experience Points",
+    "amount": 10,
+    "rank": 5
+  }
+]
