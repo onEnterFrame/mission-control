@@ -9,7 +9,6 @@ function getMission(){
 }
 
 function getNode(node){
-	console.log(node)
 	currentNode = findNodeData(currentMission+node)
 	$.get( "partials/mission"+currentMission+"/M"+currentMission+node+".html", function( data ) {
 	  $(".details").html(data);
@@ -40,6 +39,7 @@ var user_records;
 function getUser(){
 	if(location.hostname.indexOf('sap') > 1){
 		loadData();
+		loadLeaderBoard()
 	}else{
 		loadFakeRecords()
 	}
@@ -75,6 +75,19 @@ function getUser(){
 		}, this);
 
   	}
+
+  function loadLeaderBoard(){
+		GSCommunicator.send( "getLeaderboard" ,["Experience Points", 1, 5, null, null, null],  function( response ) {
+			if(response.error !=null){
+
+			}else{
+
+				createLeaderBoard(response.result)
+			}
+		}, this);
+
+  	}
+
   		var	theMap //= AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
   	function processRecords(records){
     	user_records = records;
@@ -157,6 +170,7 @@ function getUser(){
 
 
   	function playVideo(){
+  		pointsMe('M'+currentNode.id)
   		setTimeout(function(){$('.post-video').show();},1000)
   		window.open('videos/video.html?M'+currentNode.id)
   	}
@@ -165,7 +179,6 @@ function getUser(){
 function createLeaderBoard(data){
 	var leaderboard_html = "<table>"
 	$.each(data, function(i, user) {
-		console.log(user)
 		leaderboard_html +="<tr><td width='45'>" +user.amount +"</td><td> "+user.displayName+"</td></tr>"
 	});
 	leaderboard_html +="</table>"

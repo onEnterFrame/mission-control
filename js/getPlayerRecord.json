@@ -25,7 +25,7 @@
   ],
   "activeMissions": [
     {
-      "name": "mission1f",
+      "name": "mission0a",
       "displayName": "mission1p",
       "description": "rebus",
       "pointName": null,
@@ -36,8 +36,8 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission1g",
-      "displayName": "mission2a",
+      "name": "mission0b",
+      "displayName": "mission0b",
       "description": "Mission2 - Start",
       "pointName": null,
       "lowerBound": 0,
@@ -49,7 +49,7 @@
   ],
   "completedMissions": [
     {
-      "name": "mission0a",
+      "name": "mission0c",
       "displayName": "Welcome",
       "description": "Mission 0 - Introduction to story",
       "pointName": null,
@@ -60,7 +60,7 @@
       "currentPointAmount": 0
     },
     {
-      "name": "mission0b",
+      "name": "mission0d",
       "displayName": "Temporal Rules",
       "description": "Mission 0 - Temporal Rules",
       "pointName": null,

@@ -17,8 +17,8 @@
                   "id":"0B",
                   "link":null,
                   "icon":{
-                     "type":"jam",
-                     "color":"lg"
+                     "type":"play",
+                     "color":"rd"
                   },
                   "required":true
                }
