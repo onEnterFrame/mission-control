@@ -1,4 +1,5 @@
 var currentMission = 0;
+var missionProcessing =0
 var currentNode ={};
 function getMission(){
 	currentNode ={};
@@ -9,7 +10,7 @@ function getMission(){
 }
 
 function getNode(node){
-	currentNode = findNodeData(currentMission+node)
+	currentNode = findNodeData(currentMission,currentMission+node)
 	$.get( "partials/mission"+currentMission+"/M"+currentMission+node+".html", function( data ) {
 	  $(".details").html(data);
 	});
@@ -26,9 +27,9 @@ function launchLink(){
 }
 
 
-function findNodeData(nodeID){
+function findNodeData(mission,nodeID){
 	var node_json
-	$.each(nodes_json.missions[currentMission]["mission"+currentMission].nodes, function(key, value){
+	$.each(nodes_json.missions[mission]["mission"+mission].nodes, function(key, value){
     if(value.id == nodeID){
     	node_json =  value
     }
@@ -105,19 +106,19 @@ function getUser(){
 		theMap = AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
 		processCompletedMissions()
 		processActiveMissions()
-		currentMission = 0;
+		missionProcessing = 0;
   	}
 
   	function processActiveMissions(){
   			var completedMissions = user_records.activeMissions
 		$.each(completedMissions, function(i, mission) {
 
-			currentMission = mission.name.match(/\d+/)[0]
-			$('.mission'+currentMission).show()
+			missionProcessing = mission.name.match(/\d+/)[0]
+			$('.mission'+missionProcessing).show()
 			var missionID = "M"+mission.name.substr(7).toUpperCase()
 			try{
 				theMap.getSymbol(missionID).play(800)
-				var nodeData = findNodeData(mission.name.substr(7).toUpperCase())
+				var nodeData = findNodeData(missionProcessing, mission.name.substr(7).toUpperCase())
 				theMap.$(missionID).show()
 				theMap.getSymbol(missionID).$('glow').show()
             	theMap.getSymbol(missionID).$('icon').css('background-image', "url('images/icons/"+nodeData.icon.type+"_wht.png')");
@@ -134,11 +135,11 @@ function getUser(){
   	function processCompletedMissions(){
   			var completedMissions = user_records.completedMissions
 		$.each(completedMissions, function(i, mission) {
-			currentMission = mission.name.match(/\d+/)[0]
+			missionProcessing = mission.name.match(/\d+/)[0]
 			var missionID = "M"+mission.name.substr(7).toUpperCase()
 			try{
 				theMap.getSymbol(missionID).play(800)
-				var nodeData = findNodeData(mission.name.substr(7).toUpperCase())
+				var nodeData = findNodeData(missionProcessing, mission.name.substr(7).toUpperCase())
 				theMap.$(missionID).show()
             	theMap.getSymbol(missionID).$('icon').css('background-image', "url('images/icons/"+nodeData.icon.type+"_"+nodeData.icon.color+".png')");
 			}catch(e){
