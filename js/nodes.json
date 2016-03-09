@@ -140,7 +140,7 @@
                   "id":"1M",
                   "link":null,
                   "icon":{
-                     "type":"page",
+                     "type":"link",
                      "color":"lg"
                   },
                   "required":true
