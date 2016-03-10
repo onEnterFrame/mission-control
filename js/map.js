@@ -63,12 +63,21 @@ function getUser(){
 	}, this);
 		 
     	}
-    	
+   var loadAttempts = 0;
   function loadData(){
+  	loadAttempts++
+  	if(loadAttempts > 20){
+  		$(".flow-wrapper").hide()
+  		alert("Sorry we could not find you in the database.");
+  		return;
+  	}
 		GSCommunicator.send( "getPlayerRecord" ,[GSCommunicator.getPlayerId()],  function( response ) {
 			if(response.error !=null){
+				setTimeout(function(){
 				loadRecords();
-				loadData()
+				loadData();
+				},500)
+			
 			}else{
 				processRecords(response.result)
 			}
