@@ -66,7 +66,7 @@ function getUser(){
    var loadAttempts = 0;
   function loadData(){
   	loadAttempts++
-  	if(loadAttempts > 20){
+  	if(loadAttempts > 18){
   		$(".flow-wrapper").hide()
   		alert("Sorry we could not find you in the database.");
   		return;
