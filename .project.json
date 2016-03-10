@@ -1,7 +1,14 @@
 {
-	"hcpdeploy": {
-		"account": "c5235687sapdev",
-		"name": "mission-control",
-		"lastVersionWeTriedToDeploy": "1"
-	}
+  "hcpdeploy": {
+    "account": "w1db87a14",
+    "name": "missioncontroltest",
+    "lastVersionWeTriedToDeploy": "1.0.1"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "",
+    "defaultLanguage": "",
+    "defaultI18NPropertyFile": "",
+    "resourceModelName": ""
+  }
 }
