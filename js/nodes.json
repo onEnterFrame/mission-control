@@ -11,7 +11,7 @@
                      "color":"lg"
                   },
                   "required":true,
-                  "video": "videoFile.name"
+                  "video":"videoFile.name"
                },
                {
                   "id":"0B",
@@ -30,7 +30,7 @@
             "nodes":[
                {
                   "id":"1A",
-                  "link":"http://sap.com",
+                  "link":null,
                   "icon":{
                      "type":"lms",
                      "color":"lg"
@@ -39,6 +39,24 @@
                },
                {
                   "id":"1B",
+                  "link":"http://help.sap.com/businessobject/product_guides/Jam14/en/sap_jam_user_guide.pdf",
+                  "icon":{
+                     "type":"doc",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1C",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1D",
                   "link":"http://go.sap.com/solution/industry/wholesale-distribution.html",
                   "icon":{
                      "type":"link",
@@ -47,26 +65,8 @@
                   "required":true
                },
                {
-                  "id":"1C",
-                  "link":"http://go.sap.com/solution/industry/sports-entertainment/food-beverage.html",
-                  "icon":{
-                     "type":"link",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1D",
-                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/weissbeerger.html",
-                  "icon":{
-                     "type":"link",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
                   "id":"1E",
-                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/giz.html",
+                  "link":"http://go.sap.com/solution/industry/sports-entertainment/food-beverage.html",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -75,7 +75,7 @@
                },
                {
                   "id":"1F",
-                  "link":"http://www.sap.com/customer-testimonials/public-sector/feeding-america.html",
+                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/weissbeerger.html",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -84,25 +84,7 @@
                },
                {
                   "id":"1G",
-                  "link":null,
-                  "icon":{
-                     "type":"mission",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1H",
-                  "link":"https://www.sap.com/careers/about-us/history.html",
-                  "icon":{
-                     "type":"mission",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1I",
-                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/giz.html",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -110,17 +92,35 @@
                   "required":true
                },
                {
-                  "id":"1J",
-                  "link":"https://www.youtube.com/watch?v=stIU1vuWc3Q&list=PL4A27845F6B074BE9",
+                  "id":"1H",
+                  "link":"http://www.sap.com/customer-testimonials/public-sector/feeding-america.html",
                   "icon":{
-                     "type":"video",
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1I",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1J",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "icon":{
+                     "type":"jam",
                      "color":"lg"
                   },
                   "required":true
                },
                {
                   "id":"1K",
-                  "link":"http://www.conagrafoods.com/our-company/company-history",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -129,16 +129,16 @@
                },
                {
                   "id":"1L",
-                  "link":null,
+                  "link":"https://www.youtube.com/watch?v=stIU1vuWc3Q&list=PL4A27845F6B074BE9",
                   "icon":{
-                     "type":"doc",
+                     "type":"video",
                      "color":"lg"
                   },
                   "required":true
                },
                {
                   "id":"1M",
-                  "link":null,
+                  "link":"http://www.conagrafoods.com/our-company/company-history",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -149,7 +149,7 @@
                   "id":"1N",
                   "link":null,
                   "icon":{
-                     "type":"game",
+                     "type":"doc",
                      "color":"lg"
                   },
                   "required":true
@@ -158,7 +158,7 @@
                   "id":"1O",
                   "link":null,
                   "icon":{
-                     "type":"jam",
+                     "type":"lms",
                      "color":"lg"
                   },
                   "required":true
@@ -167,7 +167,16 @@
                   "id":"1P",
                   "link":null,
                   "icon":{
-                     "type":"mission",
+                     "type":"game",
+                     "color":"lg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"1Q",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
                      "color":"lg"
                   },
                   "required":false
@@ -177,18 +186,522 @@
       },
       {
          "mission2":{
-            "2a":[
+            "nodes":[
                {
-                  "id":"2a",
-                  "link":"http",
-                  "icon":"game",
+                  "id":"2A",
+                  "link":null,
+                  "icon":{
+                     "type":"video",
+                     "color":"dg"
+                  },
                   "required":true
                },
                {
-                  "id":"2a",
-                  "link":"http",
-                  "icon":"lms",
+                  "id":"2B",
+                  "link":"http://www.sap.com/customer-testimonials/transportation-logistics/rzd.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"dg"
+                  },
                   "required":true
+               },
+               {
+                  "id":"2C",
+                  "link":"http://www.sap.com/customer-testimonials/transportation-logistics/cdot.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2D",
+                  "link":"http://www.sap.com/customer-testimonials/transportation-logistics/fraport.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2E",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2F",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2G",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2H",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2I",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2J",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2K",
+                  "link":"http://videowdf.wdf.sap.corp:1080/f/tv/?/portal/150421_How_We_Run",
+                  "icon":{
+                     "type":"video",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2L",
+                  "link":"https://jam4.sapjam.com/groups/5K3uB4UpsE3nWnix6Apvz6/documents/2CKk7t3X4XBX4P30YWehpK/slide_viewer?_lightbox=true",
+                  "icon":{
+                     "type":"doc",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2M",
+                  "link":"https://jam4.sapjam.com/groups/5K3uB4UpsE3nWnix6Apvz6/documents/bhRdiHWlLE1PgOYh5HfrXr/slide_viewer",
+                  "icon":{
+                     "type":"doc",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2N",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2O",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"2P",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2Q",
+                  "link":null,
+                  "icon":{
+                     "type":"game",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2R",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dPROGRAM_DETAILS%26programID%3dOS_00046879%26fromSF%3dY&company=SAP",
+                  "icon":{
+                     "type":"lms",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2S",
+                  "link":"https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://d76f20091abd79d353b49308d99784de",
+                  "icon":{
+                     "type":"link",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2T",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"dg"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"2V",
+                  "link":null,
+                  "icon":{
+                     "type":"link",
+                     "color":"dg"
+                  },
+                  "required":false
+               }
+            ]
+         }
+      },
+      {
+         "mission3":{
+            "nodes":[
+               {
+                  "id":"3A",
+                  "link":null,
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3B",
+                  "link":"http://www.sap.com/customer-testimonials/utilities/transalta.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3C",
+                  "link":"http://www.sap.com/customer-testimonials/utilities/alliander.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3D",
+                  "link":null,
+                  "icon":{
+                     "type":"doc",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3E",
+                  "link":"https://www.youtube.com/watch?v=jLJh2DEBPIo",
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"3F",
+                  "link":"http://discover.sap.com/S4HANA#section_2",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3G",
+                  "link":"http://go.sap.com/solution/cloud.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3H",
+                  "link":"http://videowdf.wdf.sap.corp:1080/f/tv/?/portal/150421_How_We_Run",
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3I",
+                  "link":"https://portal.wdf.sap.corp/wcm/ROLES://portal_content/cp/roles/employee/company/AboutSAP/culture/Infocenters/Global%20Communications%20for%20SAP/About%20SAP/Values&isWcmsNavRoot=true",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3J",
+                  "link":"https://jam4.sapjam.com/groups/1z17wppMlfDkdx1UhT7F9I/documents/22gm20XwhRkh7G6H6Xicgw/slide_viewer",
+                  "icon":{
+                     "type":"jam",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3K",
+                  "link":"http://discover.sap.com/runsimple",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3L",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3d70203629%26componentTypeID%3dCOURSE%26revisionDate%3d1423655940000%26fromSF%3dY&company=SAP",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3M",
+                  "link":null,
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"3O",
+                  "link":"https://www.youtube.com/watch?v=vvu5mgocfjg",
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"3P",
+                  "link":null,
+                  "icon":{
+                     "type":"game",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"3Q",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lb"
+                  },
+                  "required":false
+               }
+            ]
+         }
+      },
+      {
+         "mission4":{
+            "nodes":[
+               {
+                  "id":"4A",
+                  "link":null,
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4B",
+                  "link":"http://www.sap.com/customer-testimonials/banking/royal-bank-scotland.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4C",
+                  "link":"http://www.sap.com/customer-testimonials/banking/skrill-group-ltd.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4D",
+                  "link":"http://www.sap.com/asset/detail.2012-11-nov.dutch-bangla-bank-limited-uses-sybase-to-bank-the-unbanked-in-rural-bangladesh-mp4.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4E",
+                  "link":"http://www.sap.com/pc/tech/security/software/dataprotection-privacy.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4F",
+                  "link":"http://go.sap.com/content/dam/site/sapcom/docs/download/2015/04/a62f88a4-217c-0010-82c7-eda71af511fa.pdf",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4G",
+                  "link":"http://scn.sap.com/community/sap-runs-sap/blog/2015/04/07/how-sap-runs-sap-enterprise-threat-detection",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4H",
+                  "link":"http://www.euractiv.com/sections/development-policy/phone-packed-africa-leads-way-take-mobile-banking-314141",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4I",
+                  "link":"https://www.youtube.com/watch?v=k32D7UrgkCw",
+                  "icon":{
+                     "type":"video",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4J",
+                  "link":"https://jam4.sapjam.com/groups/about_page/7QMcBAJs2D5wetu4CoDshu",
+                  "icon":{
+                     "type":"game",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4K",
+                  "link":null,
+                  "icon":{
+                     "type":"lms",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4L",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4M",
+                  "link":"https://jam4.sapjam.com/groups/TJP6d8PiIpwKTULdVkv6ki/overview_page/44500",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4N",
+                  "link":"https://prezi.com/zd0d-plstjal/the-talent-journey/?utm_campaign=share&utm_medium=copy",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4O",
+                  "link":"https://jam4.sapjam.com/groups/JFQTroO999LdO9cWwMWkaj/overview_page/60388",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"4P",
+                  "link":"https://sap.plateau.com/learning/user/common/viewItemDetails.do?componentTypeID=COURSE&goalid=&componentID=70254084&revisionDate=1404129600000&currencyCode",
+                  "icon":{
+                     "type":"lms",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4Q",
+                  "link":"https://jam4.sapjam.com/groups/5twjLeRR1Bw6nR8P2E5U7p/overview_page/59187",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4R",
+                  "link":"https://jam4.sapjam.com/groups/5K3uB4UpsE3nWnix6Apvz6/documents/SQv73QE3kY001UeQM1ZRpb/versions/4671676/slide_viewer?_lightbox=true",
+                  "icon":{
+                     "type":"link",
+                     "color":"lb"
+                  },
+                  "required":false
+               },
+               {
+                  "id":"4S",
+                  "link":null,
+                  "icon":{
+                     "type":"jam",
+                     "color":"lb"
+                  },
+                  "required":false
                }
             ]
          }
