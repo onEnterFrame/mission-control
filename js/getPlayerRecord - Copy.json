@@ -24,7 +24,17 @@
     }
   ],
   "activeMissions": [
- 
+    {
+      "name": "mission0a",
+      "displayName": "mission1p",
+      "description": "rebus",
+      "pointName": null,
+      "lowerBound": 0,
+      "upperBound": null,
+      "consequence": "M1P",
+      "completedOn": null,
+      "currentPointAmount": 0
+    },
     {
       "name": "mission0b",
       "displayName": "mission0b",
@@ -37,17 +47,7 @@
       "currentPointAmount": 0
     }
   ],
-  "completedMissions": [   {
-      "name": "mission0z",
-      "displayName": "mission1p",
-      "description": "rebus",
-      "pointName": null,
-      "lowerBound": 0,
-      "upperBound": null,
-      "consequence": "M1P",
-      "completedOn": null,
-      "currentPointAmount": 0
-    },
+  "completedMissions": [
     {
       "name": "mission0c",
       "displayName": "Welcome",
