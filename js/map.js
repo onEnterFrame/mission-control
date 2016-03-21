@@ -17,8 +17,10 @@ function getNode(node) {
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function(data) {
         $(".details").html(data);
     });
-    if (icon.type != 'mission') {
+    if (currentNode.icon.type != 'mission') {
         $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')");
+    }else{
+    	 $(".icon_holder").css('background-image', "none");
     }
 
 }
@@ -26,6 +28,9 @@ function getNode(node) {
 function launchLink() {
     if (currentNode.link) {
         window.open(currentNode.link)
+        pointsMe('M' + currentNode.id)
+    }else{
+        window.open('http://www.sap.com')
         pointsMe('M' + currentNode.id)
     }
 
