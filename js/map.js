@@ -255,7 +255,8 @@ function tryCode() {
 
     if ($("#unlock_code").val().length > 0) {
         //
-        alert("Code: " + $('#unlock_code').val() + " is not valid.\n\nStudy the past, if you would divine the future.\n ~ Confucius");
+         pointsMe($("#unlock_code").val())
+       // alert("Code: " + $('#unlock_code').val() + " is not valid.\n\nStudy the past, if you would divine the future.\n ~ Confucius");
         $("#unlock_code").val("");
         $(".unlock-btn").fadeTo(250, 0.5);
     }
