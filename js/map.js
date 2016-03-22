@@ -143,6 +143,7 @@ function processRecords(records) {
     theMap = AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
     processCompletedMissions()
     processActiveMissions()
+    $('.zoomable').show()
     missionProcessing = 0;
 }
 
