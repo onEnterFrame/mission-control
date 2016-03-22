@@ -5,7 +5,8 @@ var currentNode = {};
 var inProd = (location.hostname.indexOf('sap') > 1)
 
 function getMission() {
-    currentNode = {};
+   // currentNode = {};
+     currentNode = findNodeData(currentMission, currentMission + "A")
     $.get("partials/mission" + currentMission + "/M" + currentMission + "A.html", function(data) {
         $(".details").html(data);
     });
@@ -17,15 +18,20 @@ function getNode(node) {
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function(data) {
         $(".details").html(data);
     });
+     $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')");
+     /*
     if (currentNode.icon.type != 'mission') {
         $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')");
     }else{
     	 $(".icon_holder").css('background-image', "none");
     }
-
+	*/
 }
 
 function launchLink() {
+	if(currentNode.icon.type === "mission"){
+		return
+	} 
     if (currentNode.link) {
         window.open(currentNode.link)
         pointsMe('M' + currentNode.id)
@@ -146,6 +152,7 @@ function processActiveMissions() {
 
         missionProcessing = mission.name.match(/\d+/)[0]
         $('.mission' + missionProcessing).show()
+        $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
         var missionID = "M" + mission.name.substr(7).toUpperCase()
         try {
             theMap.getSymbol(missionID).play(800)
@@ -167,6 +174,7 @@ function processCompletedMissions() {
     var completedMissions = user_records.completedMissions
     $.each(completedMissions, function(i, mission) {
         missionProcessing = mission.name.match(/\d+/)[0]
+        $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
         var missionID = "M" + mission.name.substr(7).toUpperCase()
         try {
             theMap.getSymbol(missionID).play(800)

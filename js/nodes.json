@@ -31,7 +31,7 @@
                   "id":"1A",
                   "link":null,
                   "icon":{
-                     "type":"lms",
+                     "type":"mission",
                      "color":"lg"
                   },
                   "required":true
