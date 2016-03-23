@@ -131,6 +131,7 @@ function processRecords(records) {
     user_records = records;
     $('.user-name').text(records.name)
     $('.points').text(records.scores[0].amount)
+    $('.level').text(user_records.currentLevels[0].name.split(' ')[1])
     var badges = records.earnedBadges
     $.each(badges, function(i, item) {
         var badge = $('.' + item.name)
