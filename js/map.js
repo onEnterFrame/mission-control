@@ -1,7 +1,8 @@
 var currentMission = 0;
 var missionProcessing = 0
 var currentNode = {};
-
+var missionsZoomable = {};
+var isZoomed = false
 var inProd = (location.hostname.indexOf('sap') > 1)
 
 function getMission() {
@@ -156,6 +157,7 @@ function processActiveMissions(activeMissions) {
 
         missionProcessing = mission.name.match(/\d+/)[0]
         $('.mission' + missionProcessing).show()
+        missionsZoomable["mission"+missionProcessing] = true
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
         var missionID = "M" + mission.name.substr(7).toUpperCase()
         try {
@@ -206,6 +208,7 @@ function processCompletedMissions(completedMissions) {
     $.each(completedMissions, function(i, mission) {
         missionProcessing = mission.name.match(/\d+/)[0]
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
+        missionsZoomable["mission"+missionProcessing] = true
         var missionID = "M" + mission.name.substr(7).toUpperCase()
         try {
             theMap.getSymbol(missionID).play(800)
@@ -226,6 +229,22 @@ function loadFakeRecords() {
         dataType: 'json',
         success: function(data) {
             processRecords(data)
+        }
+    });
+
+     $.ajax({
+        url: 'js/getActiveMissionsForPlayer.json',
+        dataType: 'json',
+        success: function(data) {
+            processActiveMissions(data)
+        }
+    });
+
+    $.ajax({
+        url: 'js/getCompletedMissionsForPlayer.json',
+        dataType: 'json',
+        success: function(data) {
+           processCompletedMissions(data)
         }
     });
 
