@@ -200,7 +200,7 @@
             "link":"http://sap.com",
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -209,7 +209,7 @@
             "link":"http://www.sap.com/customer-testimonials/transportation-logistics/rzd.html",
             "icon":{
                "type":"link",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -218,7 +218,7 @@
             "link":"http://www.sap.com/customer-testimonials/transportation-logistics/cdot.html",
             "icon":{
                "type":"link",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -227,7 +227,7 @@
             "link":"http://www.sap.com/customer-testimonials/transportation-logistics/fraport.html",
             "icon":{
                "type":"link",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -236,7 +236,7 @@
             "link":null,
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -245,7 +245,7 @@
             "link":null,
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":false
          },
@@ -254,7 +254,7 @@
             "link":"http://bit.ly/SAPEarlyTalent",
             "icon":{
                "type":"jam",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -263,7 +263,7 @@
             "link":"http://bit.ly/SAPEarlyTalent",
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -272,7 +272,7 @@
             "link":"http://bit.ly/SAPEarlyTalent",
             "icon":{
                "type":"jam",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -281,7 +281,7 @@
             "link":null,
             "icon":{
                "type":"jam",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -290,7 +290,7 @@
             "link":"http://videowdf.wdf.sap.corp:1080/f/tv/?/portal/150421_How_We_Run",
             "icon":{
                "type":"video",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -299,7 +299,7 @@
             "link":"https://jam4.sapjam.com/groups/5K3uB4UpsE3nWnix6Apvz6/documents/2CKk7t3X4XBX4P30YWehpK/slide_viewer?_lightbox=true",
             "icon":{
                "type":"doc",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -308,7 +308,7 @@
             "link":"https://jam4.sapjam.com/groups/5K3uB4UpsE3nWnix6Apvz6/documents/bhRdiHWlLE1PgOYh5HfrXr/slide_viewer",
             "icon":{
                "type":"doc",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -317,7 +317,7 @@
             "link":"http://bit.ly/SAPEarlyTalent",
             "icon":{
                "type":"jam",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -326,7 +326,7 @@
             "link":null,
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -335,7 +335,7 @@
             "link":null,
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -344,7 +344,7 @@
             "link":null,
             "icon":{
                "type":"game",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -353,7 +353,7 @@
             "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dPROGRAM_DETAILS%26programID%3dOS_00046879%26fromSF%3dY&company=SAP",
             "icon":{
                "type":"lms",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -362,7 +362,7 @@
             "link":"https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://d76f20091abd79d353b49308d99784de",
             "icon":{
                "type":"link",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -371,7 +371,7 @@
             "link":"http://bit.ly/SAPEarlyTalent",
             "icon":{
                "type":"jam",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          },
@@ -380,7 +380,7 @@
             "link":null,
             "icon":{
                "type":"mission",
-               "color":"lg"
+               "color":"dg"
             },
             "required":true
          }
