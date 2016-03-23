@@ -141,15 +141,17 @@ function processRecords(records) {
         }
     })
     theMap = AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
-    processCompletedMissions()
-    processActiveMissions()
+    //processCompletedMissions()
+    getCompletedMissionsForPlayer();
+   // processActiveMissions()
+   getActiveMissionsForPlayer();
     $('.zoomable').show()
     missionProcessing = 0;
 }
 
-function processActiveMissions() {
-    var completedMissions = user_records.activeMissions
-    $.each(completedMissions, function(i, mission) {
+function processActiveMissions(activeMissions) {
+   // var completedMissions = user_records.activeMissions
+    $.each(activeMissions, function(i, mission) {
 
         missionProcessing = mission.name.match(/\d+/)[0]
         $('.mission' + missionProcessing).show()
@@ -170,9 +172,36 @@ function processActiveMissions() {
 
     });
 }
+//
+function getActiveMissionsForPlayer(){
+	  GSCommunicator.send("getActiveMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
+        if (response.error != null) {
+            setTimeout(function() {
+               getActiveMissionsForPlayer();
+            }, 500)
 
-function processCompletedMissions() {
-    var completedMissions = user_records.completedMissions
+        } else {
+            processActiveMissions(response.result)
+        }
+
+    }, this);
+}
+
+function getCompletedMissionsForPlayer(){
+	  GSCommunicator.send("getCompletedMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
+        if (response.error != null) {
+            setTimeout(function() {
+               getCompletedMissionsForPlayer();
+            }, 500)
+
+        } else {
+            processCompletedMissions(response.result)
+        }
+
+    }, this);
+}
+function processCompletedMissions(completedMissions) {
+    //var completedMissions = user_records.completedMissions
     $.each(completedMissions, function(i, mission) {
         missionProcessing = mission.name.match(/\d+/)[0]
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
