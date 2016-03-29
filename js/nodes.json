@@ -5,17 +5,16 @@
             "nodes":[
                {
                   "id":"0A",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/R5Qly4AqapoSORfo0aq9UT/video_viewer",
                   "icon":{
                      "type":"mission",
                      "color":"lg"
                   },
-                  "required":true,
-                  "video":"videoFile.name"
+                  "required":true
                },
                {
                   "id":"0B",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/eROgUO0MgCoTH5Hc3PKzwc/video_viewer",
                   "icon":{
                      "type":"play",
                      "color":"rd"
@@ -30,7 +29,25 @@
             "nodes":[
                {
                   "id":"1A",
-                  "link":"http://sap.com",
+                  "link":null,
+                  "icon":{
+                     "type":"video",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1B",
+                  "link":"http://help.sap.com/businessobject/product_guides/Jam14/en/sap_jam_user_guide.pdf",
+                  "icon":{
+                     "type":"doc",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1C",
+                  "link":"http://bit.ly/SAPEarlyTalent",
                   "icon":{
                      "type":"lms",
                      "color":"lg"
@@ -38,7 +55,7 @@
                   "required":true
                },
                {
-                  "id":"1B",
+                  "id":"1D",
                   "link":"http://go.sap.com/solution/industry/wholesale-distribution.html",
                   "icon":{
                      "type":"link",
@@ -47,7 +64,7 @@
                   "required":true
                },
                {
-                  "id":"1C",
+                  "id":"1E",
                   "link":"http://go.sap.com/solution/industry/sports-entertainment/food-beverage.html",
                   "icon":{
                      "type":"link",
@@ -56,7 +73,7 @@
                   "required":true
                },
                {
-                  "id":"1D",
+                  "id":"1F",
                   "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/weissbeerger.html",
                   "icon":{
                      "type":"link",
@@ -65,7 +82,7 @@
                   "required":false
                },
                {
-                  "id":"1E",
+                  "id":"1G",
                   "link":"http://www.sap.com/customer-testimonials/wholesale-distribution/giz.html",
                   "icon":{
                      "type":"link",
@@ -74,7 +91,7 @@
                   "required":false
                },
                {
-                  "id":"1F",
+                  "id":"1H",
                   "link":"http://www.sap.com/customer-testimonials/public-sector/feeding-america.html",
                   "icon":{
                      "type":"link",
@@ -83,79 +100,7 @@
                   "required":true
                },
                {
-                  "id":"1G",
-                  "link":null,
-                  "icon":{
-                     "type":"mission",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1H",
-                  "link":"https://www.sap.com/careers/about-us/history.html",
-                  "icon":{
-                     "type":"mission",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
                   "id":"1I",
-                  "link":"https://www.sap.com/careers/about-us/history.html",
-                  "icon":{
-                     "type":"link",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1J",
-                  "link":"https://www.youtube.com/watch?v=stIU1vuWc3Q&list=PL4A27845F6B074BE9",
-                  "icon":{
-                     "type":"video",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1K",
-                  "link":"http://www.conagrafoods.com/our-company/company-history",
-                  "icon":{
-                     "type":"link",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1L",
-                  "link":null,
-                  "icon":{
-                     "type":"doc",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1M",
-                  "link":null,
-                  "icon":{
-                     "type":"link",
-                     "color":"lg"
-                  },
-                  "required":false
-               },
-               {
-                  "id":"1N",
-                  "link":null,
-                  "icon":{
-                     "type":"game",
-                     "color":"lg"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"1O",
                   "link":null,
                   "icon":{
                      "type":"jam",
@@ -164,13 +109,67 @@
                   "required":true
                },
                {
-                  "id":"1P",
+                  "id":"1J",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "icon":{
+                     "type":"jam",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1K",
+                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1L",
+                  "link":"https://www.youtube.com/watch?v=stIU1vuWc3Q&list=PL4A27845F6B074BE9",
+                  "icon":{
+                     "type":"video",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1M",
+                  "link":"http://www.conagrafoods.com/our-company/company-history",
+                  "icon":{
+                     "type":"link",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1N",
                   "link":null,
                   "icon":{
-                     "type":"mission",
+                     "type":"doc",
+                     "color":"lg"
+                  },
+                  "required":true
+               },
+               {
+                  "id":"1O",
+                  "link":null,
+                  "icon":{
+                     "type":"link",
                      "color":"lg"
                   },
                   "required":false
+               },
+               {
+                  "id":"1P",
+                  "link":null,
+                  "icon":{
+                     "type":"game",
+                     "color":"lg"
+                  },
+                  "required":true
                },
                {
                   "id":"1Q",
@@ -188,7 +187,7 @@
                      "type":"mission",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":false
                }
             ]
          }
@@ -198,7 +197,7 @@
             "nodes":[
                {
                   "id":"2A",
-                  "link":"http://sap.com",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/71jymnCV7HiwcQXXADMXQp/video_viewer",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -951,7 +950,7 @@
             "nodes":[
                {
                   "id":"6A",
-                  "link":"http://sap.com",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/tYIMCpbtOYVKF3ZYEF34Ai/video_viewer",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -1109,7 +1108,7 @@
          "mission7":{
             "nodes":[
                {
-                  "id":"7A",
+                  "id":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/EwSuO7i0s7X5hn93HmKRIV/video_viewer",
                   "link":"http://sap.com",
                   "icon":{
                      "type":"lms",
@@ -1242,7 +1241,7 @@
             "nodes":[
                {
                   "id":"8A",
-                  "link":"http://sap.com",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/IBZva8JuMKkrPFLpET0aP4/video_viewer",
                   "icon":{
                      "type":"lms",
                      "color":"db"

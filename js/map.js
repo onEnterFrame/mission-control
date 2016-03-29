@@ -265,7 +265,7 @@ function playVideo() {
         $('.post-video').show();
     }, 1000)
     //window.open('videos/video.html?M' + currentNode.id)
-    window.open('videos/embed.html?M' + currentNode.id)
+    window.open(currentNode.link)
 }
 
 
