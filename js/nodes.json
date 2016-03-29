@@ -341,7 +341,7 @@
                },
                {
                   "id":"2Q",
-                  "link":null,
+                  "link":"games/m2/story.html",
                   "icon":{
                      "type":"game",
                      "color":"dg"
