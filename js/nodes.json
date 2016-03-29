@@ -5,7 +5,7 @@
             "nodes":[
                {
                   "id":"0A",
-                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/R5Qly4AqapoSORfo0aq9UT/video_viewer",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/eROgUO0MgCoTH5Hc3PKzwc/video_viewer",
                   "icon":{
                      "type":"mission",
                      "color":"lg"
@@ -14,7 +14,7 @@
                },
                {
                   "id":"0B",
-                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/eROgUO0MgCoTH5Hc3PKzwc/video_viewer",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/R5Qly4AqapoSORfo0aq9UT/video_viewer",
                   "icon":{
                      "type":"play",
                      "color":"rd"
@@ -164,7 +164,7 @@
                },
                {
                   "id":"1P",
-                  "link":"games/m1",
+                  "link":"games/m1/index.html",
                   "icon":{
                      "type":"game",
                      "color":"lg"
@@ -527,7 +527,7 @@
                },
                {
                   "id":"3P",
-                  "link":"games/m3",
+                  "link":"games/m3/index.html",
                   "icon":{
                      "type":"game",
                      "color":"lb"
