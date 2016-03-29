@@ -164,7 +164,7 @@
                },
                {
                   "id":"1P",
-                  "link":null,
+                  "link":"games/m1",
                   "icon":{
                      "type":"game",
                      "color":"lg"
@@ -527,7 +527,7 @@
                },
                {
                   "id":"3P",
-                  "link":null,
+                  "link":"games/m3",
                   "icon":{
                      "type":"game",
                      "color":"lb"
