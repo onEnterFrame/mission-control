@@ -153,7 +153,7 @@ function processActiveMissions(activeMissions) {
    // var completedMissions = user_records.activeMissions
     $.each(activeMissions, function(i, mission) {
         var missionNumbers = mission.name.match(/\d+/)
-        if(missionNumbers >0){
+        if(missionNumbers){
         missionProcessing = missionNumbers[0]
         $('.mission' + missionProcessing).show()
         missionsZoomable["mission"+missionProcessing] = true
@@ -207,7 +207,7 @@ function processCompletedMissions(completedMissions) {
     //var completedMissions = user_records.completedMissions
     $.each(completedMissions, function(i, mission) {
         var missionNumbers = mission.name.match(/\d+/)
-        if(missionNumbers >0){
+        if(missionNumbers){
         missionProcessing = missionNumbers[0]
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
         missionsZoomable["mission"+missionProcessing] = true
