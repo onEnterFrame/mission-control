@@ -61,7 +61,7 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":false
                },
                {
                   "id":"1E",
@@ -70,7 +70,7 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":false
                },
                {
                   "id":"1F",
@@ -79,7 +79,7 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":false
+                  "required":true
                },
                {
                   "id":"1G",
@@ -88,7 +88,7 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":false
+                  "required":true
                },
                {
                   "id":"1H",
@@ -101,7 +101,7 @@
                },
                {
                   "id":"1I",
-                  "link":null,
+                  "link":"http://bit.ly/SAPEarlyTalent",
                   "icon":{
                      "type":"jam",
                      "color":"lg"
@@ -110,7 +110,7 @@
                },
                {
                   "id":"1J",
-                  "link":"https://www.sap.com/careers/about-us/history.html",
+                  "link":"http://bit.ly/SAPEarlyTalent",
                   "icon":{
                      "type":"jam",
                      "color":"lg"
@@ -142,11 +142,11 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":false
                },
                {
                   "id":"1N",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/zPWgk3913hFD0t1vhfrmvl/slide_viewer",
                   "icon":{
                      "type":"doc",
                      "color":"lg"
@@ -160,7 +160,7 @@
                      "type":"link",
                      "color":"lg"
                   },
-                  "required":false
+                  "required":true
                },
                {
                   "id":"1P",
@@ -173,7 +173,7 @@
                },
                {
                   "id":"1Q",
-                  "link":null,
+                  "link":"http://bit.ly/SAPEarlyTalent",
                   "icon":{
                      "type":"jam",
                      "color":"lg"
@@ -187,7 +187,7 @@
                      "type":"mission",
                      "color":"lg"
                   },
-                  "required":false
+                  "required":true
                }
             ]
          }
@@ -233,7 +233,7 @@
                },
                {
                   "id":"2E",
-                  "link":null,
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2562%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -242,7 +242,7 @@
                },
                {
                   "id":"2F",
-                  "link":null,
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dCOURSE%2bOS%5f00047378%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -260,7 +260,7 @@
                },
                {
                   "id":"2H",
-                  "link":"http://bit.ly/SAPEarlyTalent",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dOS%5f00062865%26componentTypeID%3dCOURSE%26revisionDate%3d1418684400000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
