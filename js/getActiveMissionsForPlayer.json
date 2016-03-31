@@ -1,7 +1,7 @@
 [
   {
     "currentPointAmount": 0,
-    "name": "mission2i",
+    "name": "mission4i",
     "displayName": "mission2i",
     "description": "2I - JAM - Early Talent - Poll Map",
     "pointName": null,
@@ -11,8 +11,8 @@
   },
   {
     "currentPointAmount": 0,
-    "name": "mission2j",
-    "displayName": "mission2j",
+    "name": "mission4j",
+    "displayName": "mission4j",
     "description": "2J - SAP Strategy JAM",
     "pointName": null,
     "lowerBound": 0,
@@ -21,7 +21,7 @@
   },
   {
     "currentPointAmount": 0,
-    "name": "mission2o",
+    "name": "mission4o",
     "displayName": "mission2o",
     "description": "2O - Decision Making Fundamentals",
     "pointName": null,
@@ -31,7 +31,7 @@
   },
   {
     "currentPointAmount": 0,
-    "name": "mission2q",
+    "name": "mission4q",
     "displayName": "mission2q",
     "description": "2Q - Transportation Game",
     "pointName": null,

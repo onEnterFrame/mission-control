@@ -327,7 +327,7 @@
                },
                {
                   "id":"2O",
-                  "link":null,
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2713%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -336,7 +336,7 @@
                },
                {
                   "id":"2P",
-                  "link":null,
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2552%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
