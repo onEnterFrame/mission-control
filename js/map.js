@@ -6,7 +6,8 @@ var isZoomed = false
 var inProd = (location.hostname.indexOf('sap') > 1)
 
 function getMission() {
-   // currentNode = {};
+   $('.mission-area').hide()
+   theMap.$('m'+currentMission).show()
      currentNode = findNodeData(currentMission, currentMission + "A")
     $.get("partials/mission" + currentMission + "/M" + currentMission + "A.html", function(data) {
         $(".details").html(data);
@@ -19,27 +20,24 @@ function getNode(node) {
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function(data) {
         $(".details").html(data);
     });
-     $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')");
-     /*
-    if (currentNode.icon.type != 'mission') {
-        $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')");
+    if(!currentNode.hideIcon){
+        $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')"); 
     }else{
-    	 $(".icon_holder").css('background-image', "none");
+        $(".icon_holder").css('background-image', "none");
     }
-	*/
+    if(currentNode.badge){
+        $(".icon_holder").css('background-image', "url('images/icons/badges/" + currentNode.badge + ".png')"); 
+    }
 }
 
 function launchLink() {
-	if(currentNode.icon.type === "mission"){
-		return
-	} 
+
     if (currentNode.link) {
         window.open(currentNode.link)
-        pointsMe('M' + currentNode.id)
     }else{
-        window.open('http://www.sap.com')
-        pointsMe('M' + currentNode.id)
+       // window.open('http://www.sap.com')
     }
+    pointsMe('M' + currentNode.id)
 
 }
 
@@ -154,8 +152,9 @@ function processRecords(records) {
 function processActiveMissions(activeMissions) {
    // var completedMissions = user_records.activeMissions
     $.each(activeMissions, function(i, mission) {
-
-        missionProcessing = mission.name.match(/\d+/)[0]
+        var missionNumbers = mission.name.match(/\d+/)
+        if(missionNumbers >0){
+        missionProcessing = missionNumbers[0]
         $('.mission' + missionProcessing).show()
         missionsZoomable["mission"+missionProcessing] = true
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
@@ -172,12 +171,13 @@ function processActiveMissions(activeMissions) {
         } catch (e) {
             //console.log("no mission:",missionID, e)
         }
+    }
 
     });
 }
 //
 function getActiveMissionsForPlayer(){
-	  GSCommunicator.send("getActiveMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
+      GSCommunicator.send("getActiveMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
         if (response.error != null) {
             setTimeout(function() {
                getActiveMissionsForPlayer();
@@ -191,7 +191,7 @@ function getActiveMissionsForPlayer(){
 }
 
 function getCompletedMissionsForPlayer(){
-	  GSCommunicator.send("getCompletedMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
+      GSCommunicator.send("getCompletedMissionsForPlayer", [GSCommunicator.getPlayerId()], function(response) {
         if (response.error != null) {
             setTimeout(function() {
                getCompletedMissionsForPlayer();
@@ -206,7 +206,9 @@ function getCompletedMissionsForPlayer(){
 function processCompletedMissions(completedMissions) {
     //var completedMissions = user_records.completedMissions
     $.each(completedMissions, function(i, mission) {
-        missionProcessing = mission.name.match(/\d+/)[0]
+        var missionNumbers = mission.name.match(/\d+/)
+        if(missionNumbers >0){
+        missionProcessing = missionNumbers[0]
         $('#Stage_MapPanel_map_mission'+missionProcessing).addClass("zoomable");
         missionsZoomable["mission"+missionProcessing] = true
         var missionID = "M" + mission.name.substr(7).toUpperCase()
@@ -218,8 +220,7 @@ function processCompletedMissions(completedMissions) {
         } catch (e) {
             //console.log("no mission:",missionID, e)
         }
-        //
-        //console.log(missionID)
+        }
     });
 }
 

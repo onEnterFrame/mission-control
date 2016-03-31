@@ -10,7 +10,8 @@
                      "type":"mission",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"0B",
@@ -19,7 +20,8 @@
                      "type":"play",
                      "color":"rd"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                }
             ]
          }
@@ -34,7 +36,8 @@
                      "type":"video",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"1B",
@@ -187,7 +190,8 @@
                      "type":"mission",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Food"
                }
             ]
          }
@@ -278,7 +282,7 @@
                },
                {
                   "id":"2J",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/about_page/5K3uB4UpsE3nWnix6Apvz6",
                   "icon":{
                      "type":"jam",
                      "color":"dg"
@@ -382,7 +386,8 @@
                      "type":"mission",
                      "color":"dg"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Food"
                }
             ]
          }
