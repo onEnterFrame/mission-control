@@ -31,7 +31,7 @@
             "nodes":[
                {
                   "id":"1A",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/H7sYYI4Sg783Y2GgCVj2Ik/video_viewer",
                   "icon":{
                      "type":"video",
                      "color":"lg"
@@ -46,7 +46,8 @@
                      "type":"doc",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"1C",
@@ -387,7 +388,7 @@
                      "color":"dg"
                   },
                   "required":true,
-                  "badge": "Food"
+                  "badge": "Transportation"
                }
             ]
          }
@@ -435,7 +436,7 @@
                   "id":"3E",
                   "link":" https://www.youtube.com/watch?v=jLJh2DEBPIo",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"lb"
                   },
                   "required":true
@@ -550,39 +551,13 @@
                },
                {
                   "id":"3R",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dPROGRAM_DETAILS%26programID%3dOS_00046879%26fromSF%3dY&company=SAP",
-                  "icon":{
-                     "type":"lms",
-                     "color":"lb"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"3S",
-                  "link":"https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://d76f20091abd79d353b49308d99784de",
-                  "icon":{
-                     "type":"link",
-                     "color":"lb"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"3T",
-                  "link":"http://bit.ly/SAPEarlyTalent",
-                  "icon":{
-                     "type":"jam",
-                     "color":"lb"
-                  },
-                  "required":true
-               },
-               {
-                  "id":"3V",
                   "link":null,
                   "icon":{
                      "type":"mission",
                      "color":"lb"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Power"
                }
             ]
          }
