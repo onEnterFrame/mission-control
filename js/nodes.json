@@ -46,8 +46,8 @@
                      "type":"doc",
                      "color":"lg"
                   },
-                  "required":true,
-                  "hideIcon": true
+                  "required":true
+                  
                },
                {
                   "id":"1C",
