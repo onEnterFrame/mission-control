@@ -170,7 +170,6 @@ function processActiveMissions(activeMissions) {
    // var completedMissions = user_records.activeMissions
     $.each(activeMissions, function(i, mission) {
         var missionNumbers = mission.name.match(/\d+/)
-        console.log(missionNumbers)
         if(missionNumbers){
         missionProcessing = missionNumbers[0]
         $('.mission' + missionProcessing).show()
