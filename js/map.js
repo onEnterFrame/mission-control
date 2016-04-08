@@ -100,6 +100,7 @@ function loadRecords() {
     GSCommunicator.getUserInformation(function(response) {
         GSCommunicator.setPlayerId(response.username)
         userName = response.firstname +" "+response.lastname;
+        addPlayer();
     }, this);
 
 }
@@ -116,7 +117,6 @@ function loadData() {
         if (response.error != null) {
             setTimeout(function() {
                 loadRecords();
-                addPlayer();
                 loadData();
             }, 500)
 
