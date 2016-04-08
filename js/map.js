@@ -88,7 +88,8 @@ function addPlayer(){
 	 GSCommunicator.send("handleEvent", [{
             "siteId": "2045Future",
             "type": "AssignFirstMission",
-            "playerid": GSCommunicator.getPlayerId()
+            "playerid": GSCommunicator.getPlayerId(),
+            "data":{"name": userName}
         }], function(response) {
             if (response.error != null) {
                 alert('There was an error adding you to the game.')
