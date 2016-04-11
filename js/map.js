@@ -3,6 +3,7 @@ var missionProcessing = 0
 var currentNode = {};
 var missionsZoomable = {};
 var isZoomed = false
+var userName = "Guest";
 var inProd = (location.hostname.indexOf('sap') > 1)
 
 function getMission() {
@@ -83,9 +84,24 @@ $(document).ready(function() {
 
 })
 
+function addPlayer(){
+	 GSCommunicator.send("handleEvent", [{
+            "siteId": "2045Future",
+            "type": "AssignFirstMission",
+            "playerid": GSCommunicator.getPlayerId(),
+            "data":{"name": userName}
+        }], function(response) {
+            if (response.error != null) {
+                alert('There was an error adding you to the game.')
+            } 
+        }, this);
+}
+
 function loadRecords() {
     GSCommunicator.getUserInformation(function(response) {
         GSCommunicator.setPlayerId(response.username)
+        userName = response.firstname +" "+response.lastname;
+        addPlayer();
     }, this);
 
 }
@@ -93,7 +109,7 @@ var loadAttempts = 0;
 
 function loadData() {
     loadAttempts++
-    if (loadAttempts > 18) {
+    if (loadAttempts > 25) {
         $(".flow-wrapper").hide()
         alert("Sorry we could not find you in the database.");
         return;
@@ -106,6 +122,7 @@ function loadData() {
             }, 500)
 
         } else {
+        	loadAttempts = 0;
             processRecords(response.result)
         }
 
@@ -153,7 +170,6 @@ function processActiveMissions(activeMissions) {
    // var completedMissions = user_records.activeMissions
     $.each(activeMissions, function(i, mission) {
         var missionNumbers = mission.name.match(/\d+/)
-        console.log(missionNumbers)
         if(missionNumbers){
         missionProcessing = missionNumbers[0]
         $('.mission' + missionProcessing).show()
