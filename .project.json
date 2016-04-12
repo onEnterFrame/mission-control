@@ -2,7 +2,11 @@
   "hcpdeploy": {
     "account": "w1db87a14",
     "name": "missioncontroltest",
+<<<<<<< HEAD
     "lastVersionWeTriedToDeploy": "1.0.23"
+=======
+    "lastVersionWeTriedToDeploy": "1.0.25"
+>>>>>>> branch 'master' of https://github.com/onEnterFrame/mission-control.git
   },
   "translation": {
     "translationDomain": "",

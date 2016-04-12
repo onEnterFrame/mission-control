@@ -657,9 +657,9 @@
                },
                {
                   "id":"4K",
-                  "link":null,
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dOS%5f0000m090%26componentTypeID%3dCOURSE%26revisionDate%3d1418684400000%26fromSF%3dY&company=SAP",
                   "icon":{
-                     "type":"game",
+                     "type":"lms",
                      "color":"db"
                   },
                   "required":true
@@ -762,7 +762,7 @@
                },
                {
                   "id":"5C",
-                  "link":"http://www.sap.com/customer-testimonials/high-tech/earlysense.html",
+                  "link":"http://www.sap.com/customer-testimonials/healthcare/roche_diagnostics.html",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -778,29 +778,29 @@
                   },
                   "required":false
                },
-               {
+                {
                   "id":"5E",
-                  "link":"http://www.sap.com/customer-testimonials/healthcare/roche_diagnostics.html",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dOS%5f00047396%26componentTypeID%3dCOURSE%26revisionDate%3d1418684400000%26fromSF%3dY&company=SAP",
                   "icon":{
-                     "type":"link",
+                     "type":"lms",
                      "color":"lg"
                   },
                   "required":true
                },
-               {
+                 {
                   "id":"5F",
-                  "link":"https://sap.plateau.com/learning/user/catalogsearch/searchUserCatalog.do?keywordsInHeader=powerpoint+beginning&keywords=powerpoint+beginning&selectedTab=learning&fromExt=&isRequestFromTrainingNeeds=false&requestedFrom=null&goalid=&localeID=English&currencyCode=USD&secondaryLocaleID=&expandCatalogSearchBarFilters=&managerRole=&origin=CatalogSearchPage&OWASP_CSRFTOKEN=BDRV-XB7H-D1I1-N5AM-1MMS-CRFQ-V8LN-3KF0#",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f4596%26fromSF%3dY&company=SAP",
                   "icon":{
-                     "type":"link",
+                     "type":"lms",
                      "color":"lg"
                   },
                   "required":false
                },
                {
                   "id":"5G",
-                  "link":"http://www.sap.com/customer-testimonials/life-sciences/bethyl.html",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2556%26fromSF%3dY&company=SAP",
                   "icon":{
-                     "type":"link",
+                     "type":"lms",
                      "color":"lg"
                   },
                   "required":true
