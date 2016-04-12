@@ -73,7 +73,13 @@
     GSCommunicator.send = function( method, parameters, callbackFn, scope, ajaxConfig ) {
         // defaults
         var bAsync = true;
-        var sUrl = GSConfig.USER_API_URL;
+        //var sUrl = GSConfig.USER_API_URL;
+        var sUrl = '';
+         if(method == 'handleEvent'){
+            sUrl = GSConfig.TECH_API_URL;
+        }else{
+            sUrl = GSConfig.USER_API_URL;
+        }
         var appName = CURRENT_APP;
         var timeout = 60000;
         var processData = true;
@@ -178,7 +184,7 @@
                 // when the token is invalid or already expired, then skip the successFn
                 // and call sendAPIRequest again to get a new token
                 if ( jqXHR.status === 403 && jqXHR.getResponseHeader( 'X-CSRF-Token' ) ) {
-                    return GSCommunicator.fetchToken( method, parameters, callbackFn, scope, ajaxConfig );
+                    return GSCommunicator.fetchToken( method, parameters, callbackFn, scope, ajaxConfig, sUrl );
                 }
                 console.error('error during backend request' );
                 $("#error").html("<strong>Error</strong> error during backend request");
@@ -202,7 +208,7 @@
      * and the original request is invoked egain. This call is always executed synchronously, as we expect it to 
      * be run only once and other requests should wait until the token is availbale.
      */
-    GSCommunicator.fetchToken = function( method, parameters, callbackFn, scope, ajaxConfig ) {
+    GSCommunicator.fetchToken = function( method, parameters, callbackFn, scope, ajaxConfig, JSONUrl ) {
         return $.ajax( {
             url: GSConfig.USER_API_URL,
             headers: {
