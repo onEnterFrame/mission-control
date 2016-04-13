@@ -17,6 +17,14 @@
       "description": "Gamification Service - Technical Endpoint"
     },
     {
+      "path": "/gtech",
+      "target": {
+        "type": "destination",
+        "name": "gs_tech"
+      },
+      "description": "Gamification Service - Technical Endpoint"
+    },
+    {
       "path": "/sapui5",
       "target": {
         "type": "service",
