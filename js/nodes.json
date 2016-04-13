@@ -207,7 +207,9 @@
                      "type":"video",
                      "color":"dg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
+                  
                },
                {
                   "id":"2B",
