@@ -18,7 +18,7 @@
     GSConfig.USER_API_URL = '/gamification/api/user/JsonRPC';
 
     // sometimes appropriate for API terminal 
-    GSConfig.TECH_API_URL = '/gamification/api/tech/JsonRPC';
+      GSConfig.TECH_API_URL = '/gtech/JsonRPC';
     
     // session data is loaded from user data url (see SessionManager)
     GSConfig.USER_DATA_URL = '/gamification/api/user/UserData';
