@@ -210,7 +210,7 @@
      */
     GSCommunicator.fetchToken = function( method, parameters, callbackFn, scope, ajaxConfig, JSONUrl ) {
         return $.ajax( {
-            url: GSConfig.USER_API_URL,
+            url: JSONUrl,
             headers: {
                 'X-CSRF-Token': 'Fetch'
             },
