@@ -204,7 +204,7 @@
                   "id":"2A",
                   "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/71jymnCV7HiwcQXXADMXQp/video_viewer",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"dg"
                   },
                   "required":true
@@ -567,12 +567,13 @@
             "nodes":[
                {
                   "id":"4A",
-                  "link":"http://sap.com",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/vftPE5PAGDmmaOS83KGaQ1/video_viewer",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"db"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"4B",
