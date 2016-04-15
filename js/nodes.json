@@ -752,7 +752,8 @@
                      "type":"lms",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"5B",
