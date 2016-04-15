@@ -1,9 +1,5 @@
 {
-  "hcpdeploy": {
-    "account": "w1db87a14",
-    "name": "missioncontroltest",
-    "lastVersionWeTriedToDeploy": "1.0.29"
-  },
+  "hcpdeploy": {},
   "translation": {
     "translationDomain": "",
     "supportedLanguages": "",
