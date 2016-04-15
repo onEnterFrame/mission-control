@@ -152,9 +152,9 @@ function processRecords(records) {
     $.each(badges, function(i, item) {
         var badge = $('.' + item.name)
         if (i < 3) {
-            badge.css('display', 'inline').css('left', (i * 50) + 'px')
+            badge.css('display', 'inline').css('width', '40px').css('height', '40px').css('left', (i * 45) + 'px')
         } else {
-            badge.css('display', 'inline').css('left', ((i - 3) * 50) + 'px').css('top', '50px')
+            badge.css('display', 'inline').css('width', '40px').css('height', '40px').css('left', ((i - 3) * 45) + 'px').css('top', '41px')
         }
     })
     theMap = AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
