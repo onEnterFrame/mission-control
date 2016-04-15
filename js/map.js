@@ -85,7 +85,7 @@ $(document).ready(function() {
 })
 
 function addPlayer(){
-	 GSCommunicator.send("handleEvent", [{
+     GSCommunicator.send("handleEvent", [{
             "siteId": "2045Future",
             "type": "AssignFirstMission",
             "playerid": GSCommunicator.getPlayerId(),
@@ -97,7 +97,7 @@ function addPlayer(){
         }, this);
 }
 
-function loadRecords() {
+function loadUserInfo() {
     GSCommunicator.getUserInformation(function(response) {
         GSCommunicator.setPlayerId(response.username)
         userName = response.firstname +" "+response.lastname;
@@ -114,15 +114,22 @@ function loadData() {
         alert("Sorry we could not find you in the database.");
         return;
     }
+    if(userName == "Guest"){
+       loadUserInfo() 
+       setTimeout(function() {
+                loadData();
+            }, 500)
+        return
+    }
     GSCommunicator.send("getPlayerRecord", [GSCommunicator.getPlayerId()], function(response) {
         if (response.error != null) {
             setTimeout(function() {
-                loadRecords();
+                loadUserInfo();
                 loadData();
             }, 500)
 
         } else {
-        	loadAttempts = 0;
+            loadAttempts = 0;
             processRecords(response.result)
         }
 
@@ -152,9 +159,9 @@ function processRecords(records) {
     $.each(badges, function(i, item) {
         var badge = $('.' + item.name)
         if (i < 3) {
-            badge.css('display', 'inline').css('left', (i * 50) + 'px')
+            badge.css('display', 'inline').css('width', '40px').css('height', '40px').css('left', (i * 45) + 'px')
         } else {
-            badge.css('display', 'inline').css('left', ((i - 3) * 50) + 'px').css('top', '50px')
+            badge.css('display', 'inline').css('width', '40px').css('height', '40px').css('left', ((i - 3) * 45) + 'px').css('top', '41px')
         }
     })
     theMap = AdobeEdge.getComposition("EDGE-26179844").getStage().getSymbol("MapPanel").getSymbol("map")
