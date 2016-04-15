@@ -159,7 +159,7 @@
                },
                {
                   "id":"1O",
-                  "link":null,
+                  "link":"https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://2173224d6f9d811a5fef2ca1461e0ae8&url=/Infocenters/Human%20Resources%20for%20SAP/Employee%20Services/Learning/Global/Peer-To-Peer%20Learning/Mentoring",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -400,12 +400,13 @@
             "nodes":[
                {
                   "id":"3A",
-                  "link":"http://sap.com",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/jhy1qfjKiBlhm1F8WXbFPg/video_viewer",
                   "icon":{
                      "type":"lms",
                      "color":"lb"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon":true
                },
                {
                   "id":"3B",
@@ -747,7 +748,7 @@
             "nodes":[
                {
                   "id":"5A",
-                  "link":"http://sap.com",
+                  "link":null,
                   "icon":{
                      "type":"lms",
                      "color":"lg"
