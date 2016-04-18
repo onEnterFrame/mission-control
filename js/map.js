@@ -7,6 +7,7 @@ var userName = "Guest";
 var inProd = (location.hostname.indexOf('sap') > 1)
 
 function getMission() {
+     checkSessionActive();
    $('.mission-area').hide()
    theMap.$('m'+currentMission).show()
      currentNode = findNodeData(currentMission, currentMission + "A")
@@ -32,7 +33,7 @@ function getNode(node) {
 }
 
 function launchLink() {
-
+ checkSessionActive();
     if (currentNode.link) {
         window.open(currentNode.link)
     }else{
@@ -285,6 +286,7 @@ function loadFakeRecords() {
 
 
 function playVideo() {
+     checkSessionActive();
     pointsMe('M' + currentNode.id)
     setTimeout(function() {
         $('.post-video').show();
@@ -306,6 +308,7 @@ function createLeaderBoard(data) {
 
 
 function pointsMe(node) {
+     checkSessionActive();
     if (inProd) {
         GSCommunicator.send("handleEvent", [{
             "siteId": "2045Future",
@@ -334,4 +337,13 @@ function tryCode() {
         $("#unlock_code").val("");
         $(".unlock-btn").fadeTo(250, 0.5);
     }
+}
+
+function checkSessionActive() {
+    jQuery(document).ajaxComplete(function(e, jqXHR) {
+    if(jqXHR.getResponseHeader("com.sap.cloud.security.login")) {
+        alert("Session has expired due to inactivity, page shall be reloaded.");
+        window.location.reload();
+    }
+})
 }
