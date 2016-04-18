@@ -240,7 +240,7 @@
                },
                {
                   "id":"2E",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2562%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f2562%26componentTypeID%3dCOURSE%26revisionDate%3d1425492463000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -249,7 +249,7 @@
                },
                {
                   "id":"2F",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dCOURSE%2bOS%5f00047378%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dOS%5f00047378%26componentTypeID%3dCOURSE%26revisionDate%3d1418684400000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -321,7 +321,7 @@
                },
                {
                   "id":"2N",
-                  "link":"http://bit.ly/SAPEarlyTalent",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/content?folder_id=CMYEMdYscvAxDO1TQmOHbW",
                   "icon":{
                      "type":"jam",
                      "color":"dg"
@@ -330,7 +330,7 @@
                },
                {
                   "id":"2O",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2713%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f2713%26componentTypeID%3dCOURSE%26revisionDate%3d1425493258000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -339,7 +339,7 @@
                },
                {
                   "id":"2P",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2552%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f2552%26componentTypeID%3dCOURSE%26revisionDate%3d1425492439000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -357,7 +357,7 @@
                },
                {
                   "id":"2R",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink_redirect%2ejsp%3flinkId%3dPROGRAM_DETAILS%26programID%3dOS_00046879%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dOS%5f00046879%26componentTypeID%3dCOURSE%26revisionDate%3d1418684400000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -482,7 +482,7 @@
                },
                {
                   "id":"3J",
-                  "link":"https://howwerun.wdf.sap.corp/",
+                  "link":"https://howwerun.wdf.sap.corp/posters/new",
                   "icon":{
                      "type":"jam",
                      "color":"lb"
