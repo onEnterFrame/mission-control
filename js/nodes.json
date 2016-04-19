@@ -348,7 +348,7 @@
                },
                {
                   "id":"2Q",
-                  "link":"games/m2/story.html",
+                  "link":"games/m2/story_html5.html",
                   "icon":{
                      "type":"game",
                      "color":"dg"
@@ -841,9 +841,9 @@
                },
                {
                   "id":"5K",
-                  "link":"https://jam4.sapjam.com/groups/ZLEQacTatidhycgYtnIDWM/documents/LsBoDBYzgH4T0PryWlWv5L/versions/5495196/slide_viewer",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dPI%5fEarlyTalent%5fOTJ4%5f1509%26componentTypeID%3dOJT%26revisionDate%3d1438029240000%26fromSF%3dY&company=SAP",
                   "icon":{
-                     "type":"game",
+                     "type":"lms",
                      "color":"lg"
                   },
                   "required":true
