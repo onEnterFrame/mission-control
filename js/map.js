@@ -14,14 +14,22 @@ function getMission() {
     $.get("partials/mission" + currentMission + "/M" + currentMission + "A.html", function(data) {
         $(".details").html(data);
     });
-    $(".icon_holder").css('background-image', "url('images/icons/mission.png')");
+     console.log('mission hideIcon', hideIcon)
+    if(!currentNode.hideIcon){
+        $(".icon_holder").css('background-image', "url('images/icons/mission.png')"); 
+    }else{
+        $(".icon_holder").css('background-image', "none");
+    }
+    
 }
 
 function getNode(node) {
+    console.log(node)
     currentNode = findNodeData(currentMission, currentMission + node)
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function(data) {
         $(".details").html(data);
     });
+    console.log(node,'hideIcon', currentNode.hideIcon)
     if(!currentNode.hideIcon){
         $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')"); 
     }else{
