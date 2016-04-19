@@ -796,7 +796,7 @@
                },
                  {
                   "id":"5F",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f4596%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f4596%26componentTypeID%3dCOURSE%26revisionDate%3d1425495370000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"lg"
@@ -805,7 +805,7 @@
                },
                {
                   "id":"5G",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dLYNDA%5f2556%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f2556%26componentTypeID%3dCOURSE%26revisionDate%3d1425492461000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"lg"
@@ -814,7 +814,7 @@
                },
                {
                   "id":"5H",
-                  "link":"https://accounts.sap.com/saml2/idp/sso/accounts.sap.com?SAMLRequest=jZJNT8MwDIb%2FSpWd26Tpx0rUDk3sMmlcNtiBW8i8rdKalDih%2FHzSAdqEAHG0%2FPi1%2Fdr13LujXsOLB3TRHBGsa42%2BMxp9B3YD9rVV8LheNeToXI%2BCUqmU8dphgrJPlOkoyu7EabvrqUc0IexvsW%2BGYUjQKwWIe6mcsTjCJFqERq2WY5d%2FaY6S39MkWi4assnKjO8hZTGUeRHnoHhcTZmK86KoyilUe3ieBhTRw1Kjk9o1hLO0jFkap%2FwhLUSWiYwlrMqfSLQFi%2BeheMJI9NadNAqNvCHeamEktiGUHaBwSmzm9ysROCG%2FHPus%2BJvurXFGmdNFPv%2FwIFgw%2BjVkibEHyhlLKctpgECryYXOfqEZZTcjvcP2MCGzOowtzmvb2c9nqOkVUtPrJ5i9Aw%3D%3D",
+                  "link":"https://sap.plateau.com/learning/user/common/viewItemDetails.do?componentTypeID=COURSE&goalid=&componentID=OS_04236253&revisionDate=1418684400000&currencyCode=",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -823,7 +823,7 @@
                },
                {
                   "id":"5I",
-                  "link":" https://sap.plateau.com/learning/user/catalogsearch/searchUserCatalog.do?keywordsInHeader=powerpoint+beginning&keywords=powerpoint+beginning&selectedTab=learning&fromExt=&isRequestFromTrainingNeeds=false&requestedFrom=null&goalid=&localeID=English&currencyCode=USD&secondaryLocaleID=&expandCatalogSearchBarFilters=&managerRole=&origin=CatalogSearchPage&OWASP_CSRFTOKEN=BDRV-XB7H-D1I1-N5AM-1MMS-CRFQ-V8LN-3KF0#",
+                  "link":"https://portal.wdf.sap.corp/irj/portal?NavigationTarget=navurl://628765eefe87529688f7d73886690e88&url=/Infocenters/Human%20Resources%20for%20SAP/Employee%20Services/Learning/Global/Success%20Map%20Learning",
                   "icon":{
                      "type":"video",
                      "color":"lg"
@@ -834,7 +834,7 @@
                   "id":"5J",
                   "link":"https://jam4.sapjam.com/groups/TJP6d8PiIpwKTULdVkv6ki/overview_page/44501",
                   "icon":{
-                     "type":"game",
+                     "type":"link",
                      "color":"lg"
                   },
                   "required":true
@@ -868,7 +868,7 @@
                },
                {
                   "id":"5N",
-                  "link":"https://jam4.sapjam.com/groups/TJP6d8PiIpwKTULdVkv6ki/overview_page/44501",
+                  "link":"https://jam4.sapjam.com/groups/about_page/3wfeGnK5W1BxJDpFUk3ccH",
                   "icon":{
                      "type":"link",
                      "color":"lg"
@@ -877,7 +877,7 @@
                },
                {
                   "id":"5O",
-                  "link":"https://jam4.sapjam.com/groups/ZLEQacTatidhycgYtnIDWM/documents/LsBoDBYzgH4T0PryWlWv5L/versions/5495196/slide_viewer",
+                  "link":"http://news.sap.com/game-managing-player-wellness-injury-risk-monitor-scores-big-seoul/",
                   "icon":{
                      "type":"lms",
                      "color":"lg"

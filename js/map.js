@@ -14,7 +14,6 @@ function getMission() {
     $.get("partials/mission" + currentMission + "/M" + currentMission + "A.html", function(data) {
         $(".details").html(data);
     });
-     console.log('mission hideIcon', hideIcon)
     if(!currentNode.hideIcon){
         $(".icon_holder").css('background-image', "url('images/icons/mission.png')"); 
     }else{
@@ -29,7 +28,6 @@ function getNode(node) {
     $.get("partials/mission" + currentMission + "/M" + currentMission + node + ".html", function(data) {
         $(".details").html(data);
     });
-    console.log(node,'hideIcon', currentNode.hideIcon)
     if(!currentNode.hideIcon){
         $(".icon_holder").css('background-image', "url('images/icons/" + currentNode.icon.type + ".png')"); 
     }else{
@@ -44,8 +42,6 @@ function launchLink() {
  checkSessionActive();
     if (currentNode.link) {
         window.open(currentNode.link)
-    }else{
-       // window.open('http://www.sap.com')
     }
     pointsMe('M' + currentNode.id)
 
