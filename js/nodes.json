@@ -657,7 +657,8 @@
                      "type":"game",
                      "color":"db"
                   },
-                  "required":false
+                  "required":false,
+                  "hideIcon": true
                },
                {
                   "id":"4K",
@@ -738,7 +739,8 @@
                      "type":"mission",
                      "color":"db"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Finance"
                }
             ]
          }
