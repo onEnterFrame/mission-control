@@ -1217,12 +1217,13 @@
                },
                {
                   "id":"7N",
-                  "link":"https://jam4.sapjam.com/groups/JFQTroO999LdO9cWwMWkaj/overview_page/60388",
+                  "link":null,
                   "icon":{
-                     "type":"link",
+                     "type":"mission",
                      "color":"lb"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Environment"
                }
             ]
          }
