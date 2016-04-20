@@ -752,7 +752,7 @@
                   "id":"5A",
                   "link":"images/SAP_MIssion5_Email.jpg",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"lg"
                   },
                   "required":true,
@@ -941,7 +941,7 @@
                   "id":"6A",
                   "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/tYIMCpbtOYVKF3ZYEF34Ai/video_viewer",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"dg"
                   },
                   "required":true
@@ -1099,10 +1099,10 @@
          "mission7":{
             "nodes":[
                {
-                  "id":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/EwSuO7i0s7X5hn93HmKRIV/video_viewer",
-                  "link":"http://sap.com",
+                  "id":"7A",
+                  "link":"https://jam4.sapjam.com/groups/0wkrom4jwNilfD5iGCeavm/documents/EwSuO7i0s7X5hn93HmKRIV/video_viewer",
                   "icon":{
-                     "type":"lms",
+                     "type":"video",
                      "color":"lb"
                   },
                   "required":true
