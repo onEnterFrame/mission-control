@@ -944,7 +944,8 @@
                      "type":"video",
                      "color":"dg"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"6B",
@@ -1238,7 +1239,8 @@
                      "type":"lms",
                      "color":"db"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"8B",
@@ -1343,7 +1345,7 @@
                   "id":"8M",
                   "link":null,
                   "icon":{
-                     "type":"link",
+                     "type":"game",
                      "color":"db"
                   },
                   "required":false
