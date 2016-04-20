@@ -922,12 +922,14 @@
                },
                {
                   "id":"5T",
-                  "link":"http://news.sap.com/game-managing-player-wellness-injury-risk-monitor-scores-big-seoul/",
+                  "link":null,
                   "icon":{
-                     "type":"jam",
+                     "type":"mission",
                      "color":"lg"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Health"
+                 
                }
             ]
          }
@@ -1080,13 +1082,15 @@
                   "required":true
                },
                {
-                  "id":"6Q",
-                  "link":"https://portal.wdf.sap.corp/wcm/ROLES://portal_content/cp/roles/employee/employee_services/ITServices/Communications/Infocenters/SAP%20IT%20for%20SAP/Communications/~/E-Mail/SAP%20Mobile%20Documents",
+                  "id":"6Z",
+                  "link":null,
                   "icon":{
-                     "type":"link",
+                     "type":"mission",
                      "color":"dg"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Government"
+                  
                }
             ]
          }
