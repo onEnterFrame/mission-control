@@ -1039,7 +1039,7 @@
                },
                {
                   "id":"6L",
-                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dPROGRAM%5fDETAILS%26programID%3dCOURSE%2bLYNDA%5f3500%26fromSF%3dY&company=SAP",
+                  "link":"https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2fsap%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dITEM%5fDETAILS%26componentID%3dLYNDA%5f3500%26componentTypeID%3dCOURSE%26revisionDate%3d1425494541000%26fromSF%3dY&company=SAP",
                   "icon":{
                      "type":"lms",
                      "color":"dg"
@@ -1361,7 +1361,7 @@
                },
                {
                   "id":"8O",
-                  "link":null,
+                  "link":"https://jam4.sapjam.com/groups/about_page/0wkrom4jwNilfD5iGCeavm",
                   "icon":{
                      "type":"link",
                      "color":"db"
