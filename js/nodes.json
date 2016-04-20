@@ -1316,7 +1316,7 @@
                   "id":"8J",
                   "link":"http://www.digitalistmag.com/future-of-work/2016/01/21/think-like-workplace-futurist-03947533",
                   "icon":{
-                     "type":"game",
+                     "type":"link",
                      "color":"db"
                   },
                   "required":false
