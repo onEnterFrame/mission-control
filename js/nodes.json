@@ -1106,7 +1106,8 @@
                      "type":"video",
                      "color":"lb"
                   },
-                  "required":true
+                  "required":true,
+                  "hideIcon": true
                },
                {
                   "id":"7B",
