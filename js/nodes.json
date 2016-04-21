@@ -1365,7 +1365,7 @@
                   "id":"8O",
                   "link":"https://jam4.sapjam.com/groups/about_page/0wkrom4jwNilfD5iGCeavm",
                   "icon":{
-                     "type":"link",
+                     "type":"jam",
                      "color":"db"
                   },
                   "required":true
@@ -1374,7 +1374,7 @@
                   "id":"8P",
                   "link":null,
                   "icon":{
-                     "type":"link",
+                     "type":"mission",
                      "color":"db"
                   },
                   "required":true,
