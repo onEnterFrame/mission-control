@@ -1348,7 +1348,8 @@
                      "type":"game",
                      "color":"db"
                   },
-                  "required":false
+                  "required":false,
+                  "badge": "Smiley"
                },
                {
                   "id":"8N",
@@ -1375,7 +1376,8 @@
                      "type":"link",
                      "color":"db"
                   },
-                  "required":true
+                  "required":true,
+                  "badge": "Technology"
                }
             ]
          }
